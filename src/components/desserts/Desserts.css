@@ -1,0 +1,62 @@
+.dessert-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 105, 180, 0.05);
+  border-left: 4px solid #ff69b4;
+}
+
+.dessert-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dessert-container h1 {
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.meta {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  color: #6c757d;
+}
+
+h2 {
+  color: #d63384;
+  border-bottom: 2px solid #ffc8dd;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.ingredients,
+.instructions {
+  padding-left: 20px;
+}
+
+.ingredients li {
+  margin-bottom: 8px;
+}
+
+.instructions li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.error {
+  text-align: center;
+  color: #dc3545;
+  padding: 40px;
+  font-size: 1.2rem;
+}

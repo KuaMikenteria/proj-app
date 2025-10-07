@@ -1,0 +1,84 @@
+
+
+.cuisine-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+
+/* Scrollable content layer above the overlay */
+.cuisine-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* Image button item */
+.cuisine-item {
+  text-align: center;
+}
+
+.image-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.image-button img {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Apply glowing effect only on click */
+.image-button.clicked {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 4px #9e5cf5;
+}
+
+.cuisine-item p {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Add a scrollable horizontal container */
+.scrollable-row {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 2rem;
+  scroll-behavior: smooth;
+}
+
+.scrollable-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollable-row::-webkit-scrollbar-thumb {
+  background: #9e5cf5;
+  border-radius: 4px;
+}
+
+/* Prevent items from shrinking */
+.cuisine-item {
+  flex: 0 0 auto;
+  text-align: center;
+}
